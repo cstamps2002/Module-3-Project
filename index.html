@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Things That Make Me Happy</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="site">
+    <header class="happy">
+      <h1>Things That Make Me Happy</h1>
+      <p class="descr">A small gallery and a favorite song — things that keep me going</p>
+    </header>
+
+    <section aria-label="Gallery" class="gallery" style="--gap:20px">
+      <figure class="photo" style="--i:0">
+        <img src="images/Birthday.jpg" alt="23rd Birthday">
+        <figcaption class="desc">Closest friends, family, and my partner at my birthday.</figcaption>
+      </figure>
+      <figure class="photo" style="--i:1">
+        <img src="images/Chelsea_Close.jpg" alt="Chelsea">
+        <figcaption class="desc">My Step-Dad and I adopted her, we both wanted to get a dog for years.</figcaption>
+      </figure>
+      <figure class="photo" style="--i:2">
+        <img src="images/Ferrets&Cody.jpg" alt="Ferrets at the beach">
+        <figcaption class="desc">Took my ferrets on a little adventure at the beach.</figcaption>
+      </figure>
+      <figure class="photo" style="--i:3">
+        <img src="images/Smores.jpg" alt="Cuddle-Bug">
+        <figcaption class="desc">She was a stray, we found her the day after Halloween, my boyfriends sister took in smores brother. (Cosmo)</figcaption>
+      </figure>
+      <figure class="photo" style="--i:4">
+        <img src="images/Pilad.jpg" alt="Cody's friend we call Pilad">
+        <figcaption class="desc">Taking goofy pictures of my boyfriends friends.</figcaption>
+      </figure>
+      <figure class="photo" style="--i:5">
+        <img src="images/Sticker.jpg" alt="Funny Sticker">
+        <figcaption class="desc">Putting funny stickers on my car just because they make me laugh.</figcaption>
+      </figure>
+    </section>
+
+<div class="wrap">
+        <div class="container" role="main" aria-labelledby="title">
+        <figure class="cover">
+          <img src="images/Dracula.jpg" alt="Cover art">
+          <figcaption>My current favorite song</figcaption>
+        </figure>
+            <h1 id="title" style="color:#fff">Dracula</h1>
+            <p style="color:#fff">Tame Impala</p>
+
+            <div class="audio-player">
+                <audio controls>
+                    <source src="sounds/Dracula.mp3" type="audio/mpeg">
+                </audio>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.photo').forEach((el, i) => el.style.setProperty('--i', i));
+      requestAnimationFrame(() => document.documentElement.classList.add('page-loaded'));
+    });
+  </script>
+</body>
+</html>
